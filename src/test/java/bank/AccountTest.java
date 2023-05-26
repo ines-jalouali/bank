@@ -1,5 +1,6 @@
 package bank;
 
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.MethodSource;
 import java.util.stream.Stream;
@@ -7,6 +8,8 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class AccountTest {
 
+	
+    @SuppressWarnings("deprecation")
     private static Stream<Account> accountProvider() {
         return Stream.of(
                 new Account("1", 1000, 0.05),
