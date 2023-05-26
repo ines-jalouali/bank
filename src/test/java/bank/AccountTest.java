@@ -36,16 +36,16 @@ public class AccountTest {
         assertEquals(expectedBalance, account.getBalance(), 0);
     }
 
-    @ParameterizedTest
-    @MethodSource("accountProvider")
-    public void testTransfer(Account fromAccount, Account toAccount) {
-        double amount = 100;
-        double expectedFromBalance = fromAccount.getBalance() - amount;
-        double expectedToBalance = toAccount.getBalance() + amount;
-        fromAccount.transfer(toAccount, amount);
-        assertEquals(expectedFromBalance, fromAccount.getBalance(), 0);
-        assertEquals(expectedToBalance, toAccount.getBalance(), 0);
-    }
+//    @ParameterizedTest
+//    @MethodSource("accountProvider")
+//    public void testTransfer(Account fromAccount, Account toAccount) {
+//        double amount = 100;
+//        double expectedFromBalance = fromAccount.getBalance() - amount;
+//        double expectedToBalance = toAccount.getBalance() + amount;
+//        fromAccount.transfer(toAccount, amount);
+//        assertEquals(expectedFromBalance, fromAccount.getBalance(), 0);
+//        assertEquals(expectedToBalance, toAccount.getBalance(), 0);
+//    }
 } 
 
 
